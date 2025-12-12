@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chiikawa</title>
+        <style>
+            body {
+                background-color: burlywood;
+            }
+            h1 {
+                font-style: oblique;
+                color: cornflowerblue;
+                background-color: aliceblue;
+                font-size: xxx-large;
+                text-align: center;
+            }
+
+            p {
+                font-style: oblique;
+                color: #f0f0f0;
+                font-size: x-large;
+                text-align: center;
+                font-weight: 200;
+            }
+
+            img {
+                margin-left: 15%;
+                padding: 2%;
+                background-color: azure;
+                border-color: chocolate;
+                border-style: double;
+            }
+
+            button {
+                font-size: 40px;
+                background-color: darkkhaki;
+                padding: 50px;
+                border-radius: 50px;
+                margin-right: 10%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="title-text">ยินดีต้อนรับ</h1>
+        <p>My chiikawa</p>
+        <a href="https://www.chiikawaofficial.com/">chiikawaofficial</a>
+        <img id="web-Img" src="https://chiikawa-merch.com/cdn/shop/articles/Is_Chiikawa_a_kids_show.jpg?v=1751681972&width=1100" alt="chiikawa">
+        <button onclick="sayHello()">comeคลิก</button>
+
+        <script>
+            let myName = 'Thanunchanok'
+            function sayHello() {
+                alert('Hello '+ myName)
+                const textTitleElement = document.getElementById('title-text')
+                textTitleElement.innerText = 'wellcome The world Chiikawa Ms.' + myName
+                textTitleElement.style = 'color: pink; font-size: 70px;'
+
+                const webImage = document.getElementById('web-Img')
+                webImage.src ="https://shop.casablanca.com.hk/cdn/shop/collections/CW_Collection_thumbnails.jpg?v=1723796004&width=1296"
+                webImage.style = 'margin-right: 20%;'
+            }
+        </script>
+    </body>
+
+</html>
