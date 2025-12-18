@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Tpye in html</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            .hint { font-size: 0.9rem; color: #666; margin-left: 6px; display: inline-block; }
+            .field-row { margin-bottom: 12px; }
+        href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+        
+        <style>
+
+            body {
+                background-color: cornsilk;
+            }
+
+            button {
+                padding: 5px;
+            }
+
+            input[readonly] {
+                background-color: #e8f5e9;
+                color: #333;
+                border: 1px solid #66bb6a;
+                padding: 5px;
+            }
+
+            .mali-regular-italic {
+            font-family: "Mali", cursive;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+            /* Underline for the specific h2 heading */
+            h2.input_type.mali-regular-italic {
+                text-decoration: underline;
+                text-decoration-thickness: 2px;
+                text-underline-offset: 6px;
+            }
+
+        .gif-column {
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+
+        .field-row {
+            margin-top: 20px;
+        }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="layout">
+            <div class="form-column">
+
+        <h1 style="text-align: center; background-color: aliceblue; border-radius: 50px; padding: 50px; margin-left: 30%; margin-right: 30%; " 
+        class="mali-regular-italic">การกรอกข้อมูล</h1>
+
+        <h1 class="mali-regular-italic">โปรดใส่ชื่อของคุณ</h1>
+        <label for="input-name">ชื่อ-นามสกุล:</label>
+        <input id="input-name" maxlength="30" placeholder="กรอกชื่อนามสกุล" type="text">
+        <button id="submit-name" type="button">ตกลง</button>
+
+        <h1 class="mali-regular-italic">โปรดใส่เบอร์โทรศัพท์ของคุณ</h1>
+        <label for="input-tel">เบอร์โทรศัพท์:</label>
+        <input id="input-tel" maxlength="10" placeholder="กรอกเบอร์โทรศัพท์" type="tel">
+        <button id="submit-tel" type="button">ตกลง</button>
+
+        <h1 class="mali-regular-italic">โปรดใส่อายุของคุณ</h1>
+        <label for="input-agee">อายุ:</label>
+        <input id="input-agee" maxlength="3" placeholder="ระบุอายุ" type="number">
+        <button id="submit-agee" type="button">ตกลง</button>
+
+        <h1 class="mali-regular-italic">E-mail</h1>
+        <label for="input-email">อีเมล:</label>
+        <input id="input-email" placeholder="กรอกอีเมล" type="email">
+        <button id="submit-email" type="button">ตกลง</button>
+
+        </div>
+            <aside class="gif-column" aria-hidden="true">
+                <img src="https://media.tenor.com/8hHHxvAr1LIAAAAj/chiikawa-usagi.gif" alt="">
+            </aside>
+        </div>
+
+        <h2 class="input_type mali-regular-italic">input types เพิ่มเติม</h2>
+
+        <div class="field-row">
+            <label for="input-date" class="mali-regular-italic">โปรดใส่วันที่ : </label>
+            <input id="input-date" type="date">
+
+        </div>
+
+
+        <div class="field-row">
+            <label for="input-time" class="mali-regular-italic">โปรดใส่เวลา : </label>
+            <input id="input-time" type="time">
+            <!-- type: time -->
+        </div>
+
+
+        <div class="field-row">
+            <label for="input-datetime" class="mali-regular-italic">โปรดใส่วันที่-เวลา : </label>
+            <input id="input-datetime" type="datetime-local">
+            <!-- type: datetime-local -->
+        </div>
+
+
+        <div class="field-row">
+            <label for="input-month" class="mali-regular-italic">โปรดเลือกเดือน : </label>
+            <input id="input-month" type="month">
+            <!-- type: month -->
+        </div>
+
+
+        <div class="field-row">
+            <label for="input-week" class="mali-regular-italic">โปรดเลือกสัปดาห์ : </label>
+            <input id="input-week" type="week">
+            <!-- type: week -->
+        </div>
+
+
+        <div class="field-row">
+            <label for="input-color" class="mali-regular-italic">โปรดเลือกสีที่คุณชอบ : </label>
+            <input id="input-color" type="color" value="#66bb6a">
+            <span id="color-sample" class="hint">#66bb6a</span>
+        </div>
+
+
+        <div class="field-row">
+            <label for="input-url" class="mali-regular-italic">โปรดใส่ URL : </label>
+            <input id="input-url" type="url" placeholder="https://example.com">
+            <!-- type: url -->
+        </div>
+
+
+        <div class="field-row">
+            <label for="input-search" class="mali-regular-italic">โปรดค้นหา : </label>
+            <input id="input-search" type="search" placeholder="ค้นหา...">
+            <!-- type: search -->
+        </div>
+
+
+        <div class="field-row">
+            <label for="input-range" class="mali-regular-italic">โปรดเลือกค่าช่วง : </label>
+            <input id="input-range" type="range" min="0" max="100" value="50">
+            <span id="range-value" class="hint">50</span>
+        </div>
+
+
+        <div class="field-row">
+            <label class="mali-regular-italic">โปรดเลือกตัวเลือก : </label>
+            <label><input type="checkbox" id="chk-news"> รับข่าวสาร</label>
+            <label><input type="checkbox" id="chk-updates"> รับอัปเดต</label>
+            <!-- type: checkbox -->
+        </div>
+
+
+        <div class="field-row">
+            <label class="mali-regular-italic">โปรดเลือกเพศ : </label>
+            <label><input type="radio" name="gender" value="female"> หญิง</label>
+            <label><input type="radio" name="gender" value="male"> ชาย</label>
+            <!-- type: radio -->
+        </div>
+
+
+        <div class="field-row">
+            <label for="input-file" class="mali-regular-italic">โปรดเลือกไฟล์ : </label>
+            <input id="input-file" type="file">
+            <span id="file-name" class="hint"></span>
+        </div>
+
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const nameButton = document.getElementById('submit-name')
+                const telButton = document.getElementById('submit-tel')
+                const ageeButton = document.getElementById('submit-agee')
+                const emailButton = document.getElementById('submit-email')
+
+                if (nameButton) {
+                    nameButton.addEventListener('click', function () {
+                        const nameInput = document.getElementById('input-name')
+                        if (nameInput) nameInput.value = 'กรอกเสร็จเรียบร้อยแล้ว'
+                    })
+                }
+
+                if (telButton) {
+                    telButton.addEventListener('click', function () {
+                        const telInput = document.getElementById('input-tel')
+                        if (telInput) telInput.value = 'กรอกเสร็จเรียบร้อยแล้ว'
+                    })
+                }
+
+                if (ageeButton) {
+                    ageeButton.addEventListener('click', function () {
+                        const ageeInput = document.getElementById('input-agee')
+                        if (!ageeInput) return
+
+                        if (ageeInput.type === 'number') {
+                            
+                            ageeInput.dataset.original = ageeInput.value
+                            ageeInput.type = 'text'
+                            ageeInput.value = 'กรอกเสร็จเรียบร้อยแล้ว'
+                            ageeInput.setAttribute('readonly', 'true')
+                        } else {
+                            ageeInput.value = 'กรอกเสร็จเรียบร้อยแล้ว'
+                        }
+                    })
+
+                }
+
+                if (emailButton) {
+                    emailButton.addEventListener('click', function () {
+                        const emailInput = document.getElementById('input-email')
+                        if (!emailInput) return
+
+
+                        if (emailInput.value.trim() === '') {
+                            alert('กรุณากรอกอีเมลก่อน')
+                            return
+                        }
+
+                        emailInput.value = 'กรอกเสร็จเรียบร้อยแล้ว'
+                        emailInput.setAttribute('readonly', 'true')
+                    })
+                }
+
+            })
+        </script>
+    </body>
+
+</html>
