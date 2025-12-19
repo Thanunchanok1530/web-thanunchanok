@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>บทเรียน Dom</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+        <link href="./style.css" rel="stylesheet">
+    
+    </head>
+
+    <body>
+        <div class="flex-header nav-menu-container mali-regular-italic">
+        <a class="nav-menu-item" href="index.html">หน้าแรก</a>
+        <a class="nav-menu-item" href="https://www.instagram.com/">IG ของฉัน</a>
+        <a class="nav-menu-item" href="../week2/ex5.html">บทเรียนสัปดาห์ที่ 2</a>
+        <a class="nav-menu-item" href="./dom.html">บทเรียนเรื่องDomและBom</a>
+
+        </div>
+        <div class="flex-header mali-regular-italic header-container">
+            <h2>เรียนเรื่อง Get Element By Tag Name</h2>
+        </div>
+    <script>
+        const aTag = document.getElementsByTagName('a')
+        console.log(aTag[1])
+
+        const navMenuClassItem = document.getElementsByClassName('nav')
+        navMenuClassItem[1].innerText = 'เปลี่ยนข้อความดู'
+    </script>
+    </body>
+</html>
