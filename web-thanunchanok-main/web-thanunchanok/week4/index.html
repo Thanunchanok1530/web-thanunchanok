@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width", initial-scale="1.0">
+        <title>Week 4 -Project Overview</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <div>
+            <h1 id="greeting">สวัสดีค่ะ คุณ [ชื่อ]</h1>
+        </div>
+        <div>
+            <button onclick="showUserInfo()">แสดงข้อมูลผู้ใช้</button>
+            <button onclick="location.reload()">รีเฟรชหน้า</button>
+            <button onclick="openNewWindow()">เปิดหน้าต่างใหม่</button>
+        </div>
+        <script>
+            function openNewWindow() {
+                window.open('https://www.chiikawaofficial.com/')
+            }
+
+            function Lo() {
+                window.location.reload()
+            }
+
+            function showUserInfo() {
+                const userAgent = navigator.userAgent;
+                const language = navigator.language;
+                const width = screen.width;
+                const height = screen.height;
+                alert('ข้อมูลผู้ใช้' + userAgent + 'ภาษา' + language + 'ความกว้าง' + width + 'สูง' + height)
+            }
+
+            const userName = window.prompt("กรุณาใส่ชื่อของคุณ");
+            if (userName) {
+                document.getElementById("greeting").innerText = 'สวัสดีค่ะ คุณ ' + userName
+            }
+
+        
+        </script>
+    </body>
+</html>
